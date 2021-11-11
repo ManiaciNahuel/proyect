@@ -1,0 +1,492 @@
+@import "../bootstrap_sass/scss/bootstrap.scss";
+// Colores //
+$naranja: #F0572F;
+$amarillo: #F6BA1E;
+
+/* General */
+
+body {
+    background-color: #F3F3F3;
+    section {
+        ul {
+            li {
+                font-size: large;
+            }
+        }
+    }
+}
+
+* {
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 11rem;
+    padding-left: 1%;
+}
+
+a {
+    color: #F0572F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F0572F;
+}
+
+
+/* Encabezado */
+
+.logo {
+    display: inline-block;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    background-color: #F3F3F3;
+    z-index: 10;
+    border-bottom: solid 3px $naranja;
+    border-radius: 3px;
+    grid-area: header;
+    h1 {
+        position: absolute;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-bottom: 1px;
+        color: $naranja;
+    }
+}
+
+
+/* Menu items*/
+
+nav {
+    ul {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        li {
+            a {
+                color: #000000;
+                text-decoration: none;
+                border-radius: 10px;
+                padding: 2px;
+                border: solid 0.4rem $amarillo;
+                background-color: $amarillo;
+                margin-left: 5px;
+                margin-right: 5px;
+                transition: transform 3s;
+            }
+        }
+    }
+    a {
+        &:hover+div {
+            display: block;
+        }
+    }
+}
+
+.hoverDestinos {
+    border-radius: 6px;
+    background-color: #f0562fce;
+    padding: 3px;
+    display: none;
+    position: absolute;
+    top: 11rem;
+    left: 62%;
+}
+
+.hoverSeguimiento {
+    border-radius: 6px;
+    background-color: #f0562fce;
+    padding: 3px;
+    display: none;
+    position: absolute;
+    top: 11rem;
+    left: 20%;
+}
+
+.flexMenu {
+    li {
+        a {
+            &:hover {
+                background-color: $naranja;
+                color: #F3F3F3;
+                border: solid $naranja 0.4rem;
+                transform: translate(120px, 50%);
+            }
+        }
+    }
+}
+
+.naranja {
+    color: $naranja;
+}
+
+.letraGrande {
+    font-size: 130%;
+}
+
+
+/* Tabla cotización */
+
+table {
+    width: 97vw;
+}
+
+tr {
+    td {
+        border: 2px solid $naranja;
+        padding: 20px;
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.listStyleSquare {
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+.localidades {
+    display: flex;
+    flex-direction: column;
+    // No need to set list-style: none; since .list-group-item is block level
+    padding-left: 0; // reset padding because ul and ol
+    margin-bottom: 0;
+    @include border-radius($list-group-border-radius);
+    align-items: center;
+    list-style-type: "\1F4CC";
+    list-style-position: inside;
+}
+
+
+/* Tres opciones */
+
+.serviceContainer {
+    a {
+        div {
+            border: solid 3px $naranja;
+            border-radius: 10px;
+            margin: 6px;
+            height: 100%;
+            width: 450px;
+            transition: all 2s;
+        }
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 50px;
+}
+
+section {
+    div {
+        a {
+            &:hover {
+                color: black;
+            }
+            div {
+                &:hover {
+                    background-color: $amarillo;
+                    border: solid 3px $amarillo;
+                }
+                img {
+                    width: 100%;
+                    height: 60%;
+                    justify-content: end;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+
+.page-section {
+    padding: 3rem 0;
+    display: block;
+}
+
+
+/* Carousel */
+
+.carousel-control-prev {
+    padding: 3px;
+}
+
+.carousel-control-next {
+    padding: 3px;
+}
+
+.carousel-inner {
+    img {
+        width: 900px;
+        height: 600px;
+    }
+}
+
+
+/* Otros */
+
+.textArea {
+    background-color: #f0562f2e;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+
+/* ANIMACIONES */
+
+.animacion {
+    transition: background-color 3s;
+    &:hover {
+        background-color: $naranja;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+
+/* Footer */
+
+footer {
+    margin: 30px 15px 5px 15px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 35px 15px 15px;
+    border: 2px solid $naranja;
+    border-radius: 8px;
+    grid-area: pie;
+    div {
+        margin: 5px 3rem 5px 3rem;
+        padding: 15px;
+        display: inline-block;
+    }
+}
+
+.inline {
+    display: inline-block;
+}
+
+
+/* Inputs y areas para ingresar información/datos */
+
+fieldset {
+    width: 400px;
+}
+
+input,
+textarea,
+select {
+    background-color: white;
+}
+
+
+/* Grid AYUDA */
+
+#titulo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    padding-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    grid-area: h2;
+}
+
+
+/* REDES */
+
+
+/* Map */
+
+$redes:("instagram": $pink, "facebook": $blue, "whatsapp": $green, "mail": $red);
+
+/* Each */
+
+@each $red,
+$color in $redes {
+    .red--#{$red} {
+        color: $color;
+        >a {
+            color: $color;
+        }
+    }
+    .red--#{$red}>a:hover {
+        background-color: $color;
+        color: white;
+    }
+}
+
+.redes {
+    line-height: 5.5;
+    padding: 35px 5px;
+    text-align: center;
+    border: 2px solid $naranja;
+    border-radius: 8px;
+    grid-area: redes;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.form_ext {
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* Extend */
+
+.form__info {
+    @extend.form_ext;
+    grid-area: masInfo;
+}
+
+.form__newsLetters {
+    @extend.form_ext;
+    grid-area: mail;
+}
+
+.form__crecer {
+    @extend.form_ext;
+    grid-area: crecer;
+}
+
+#submit {
+    @extend.form_ext;
+    grid-area: sub;
+}
+
+.form {
+    @extend.form_ext;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid $naranja;
+    border-radius: 8px;
+    grid-area: form;
+}
+
+.containerAyuda {
+    padding: 0px 4px 4px 2px;
+    margin: 2px 4px 4px 2px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 0.5fr repeat(3, 0.75fr) auto;
+    gap: 20px 15px;
+    grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie";
+}
+
+
+/* Bucle */
+
+@for $car from 1 through 3 {
+    .opcion-#{$car} {
+        @if $car==1 {
+            color: #e1306e;
+        }
+        @else if $car==2 {
+            color: #3525c5;
+        }
+        @else if $car==3 {
+            color: #1ca81c;
+        }
+        @else if $car==4 {
+            color: #060706;
+        }
+        ;
+    }
+}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 10px;
+    }
+    #titulo {
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        height: 360px;
+        background-color: #F3F3F3;
+        border-bottom: solid 3px $naranja;
+        border-radius: 3px;
+        grid-area: header;
+        h1 {
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 25px;
+            margin-bottom: 1px;
+            color: $naranja;
+        }
+    }
+    nav {
+        ul {
+            list-style-type: none;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            flex-wrap: wrap;
+            li {
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    padding: 0px 86px;
+                    width: 100%;
+                    border: solid 0.4rem $amarillo;
+                    background-color: $amarillo;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    transition: transform 3s;
+                }
+                padding: 9px;
+            }
+        }
+        a {
+            &:hover+div {
+                display: none;
+            }
+        }
+    }
+    .containerAyuda {
+        padding: 0px 4px 4px 2px;
+        margin: 2px 4px 4px 2px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr 0.5fr repeat(3, 0.75fr) auto;
+        gap: 20px 15px;
+        grid-template-areas: "header header header" "h2 h2 h2" "redes redes redes" "redes redes redes" "form form form" "form form form" "pie pie pie";
+    }
+}
