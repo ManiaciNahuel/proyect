@@ -7813,7 +7813,7 @@ textarea.form-control-lg {
 
 /* General */
 body {
-  background-color: #F3F3F3; }
+  background-color: #FEFFFE; }
   body section ul li {
     font-size: large; }
 
@@ -7842,9 +7842,9 @@ header {
   position: fixed;
   width: 100%;
   height: 180px;
-  background-color: #F3F3F3;
+  background-color: #FEFFFE;
   z-index: 10;
-  border-bottom: solid 3px #F0572F;
+  border-bottom: solid 3px #FF556D;
   border-radius: 3px;
   grid-area: header; }
   header h1, header .h1 {
@@ -7853,7 +7853,7 @@ header {
     margin-top: 50px;
     margin-left: 25px;
     margin-bottom: 1px;
-    color: #F0572F; }
+    color: #FF556D; }
 
 /* Menu items*/
 nav ul {
@@ -7869,8 +7869,8 @@ nav ul {
     text-decoration: none;
     border-radius: 10px;
     padding: 2px;
-    border: solid 0.4rem #F6BA1E;
-    background-color: #F6BA1E;
+    border: solid 0.4rem #1597B0;
+    background-color: #1597B0;
     margin-left: 5px;
     margin-right: 5px;
     transition: transform 3s; }
@@ -7897,13 +7897,13 @@ nav a:hover + div {
   left: 20%; }
 
 .flexMenu li a:hover {
-  background-color: #F0572F;
-  color: #F3F3F3;
-  border: solid #F0572F 0.4rem;
+  background-color: #FF556D;
+  color: #FEFFFE;
+  border: solid #FF556D 0.4rem;
   transform: translate(120px, 50%); }
 
 .naranja {
-  color: #F0572F; }
+  color: #FF556D; }
 
 .letraGrande {
   font-size: 130%; }
@@ -7913,7 +7913,7 @@ table {
   width: 97vw; }
 
 tr td {
-  border: 2px solid #F0572F;
+  border: 2px solid #FF556D;
   padding: 20px; }
 
 .italic {
@@ -7943,7 +7943,7 @@ tr td {
   margin-bottom: 10px;
   gap: 50px; }
   .serviceContainer a div {
-    border: solid 3px #F0572F;
+    border: solid 3px #FF556D;
     border-radius: 10px;
     margin: 6px;
     height: 100%;
@@ -7954,8 +7954,8 @@ section div a:hover {
   color: black; }
 
 section div a div:hover {
-  background-color: #F6BA1E;
-  border: solid 3px #F6BA1E; }
+  background-color: #1597B0;
+  border: solid 3px #1597B0; }
 
 section div a div img {
   width: 100%;
@@ -7992,7 +7992,7 @@ section div a div img {
 .animacion {
   transition: background-color 3s; }
   .animacion:hover {
-    background-color: #F0572F;
+    background-color: #FF556D;
     transform: scale(1.2, 1.2); }
 
 /* Footer */
@@ -8003,7 +8003,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 15px 35px 15px 15px;
-  border: 2px solid #F0572F;
+  border: 2px solid #FF556D;
   border-radius: 8px;
   grid-area: pie; }
   footer div {
@@ -8077,7 +8077,7 @@ select {
   line-height: 5.5;
   padding: 35px 5px;
   text-align: center;
-  border: 2px solid #F0572F;
+  border: 2px solid #FF556D;
   border-radius: 8px;
   grid-area: redes; }
   .redes ul {
@@ -8104,7 +8104,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 2px solid #F0572F;
+  border: 2px solid #FF556D;
   border-radius: 8px;
   grid-area: form; }
 
@@ -8138,8 +8138,8 @@ select {
     position: relative;
     width: 100%;
     height: 360px;
-    background-color: #F3F3F3;
-    border-bottom: solid 3px #F0572F;
+    background-color: #FEFFFE;
+    border-bottom: solid 3px #FF556D;
     border-radius: 3px;
     grid-area: header; }
     header h1, header .h1 {
@@ -8147,7 +8147,7 @@ select {
       margin-top: 50px;
       margin-left: 25px;
       margin-bottom: 1px;
-      color: #F0572F; }
+      color: #FF556D; }
   nav ul {
     list-style-type: none;
     width: 100%;
@@ -8164,8 +8164,8 @@ select {
         border-radius: 10px;
         padding: 0px 86px;
         width: 100%;
-        border: solid 0.4rem #F6BA1E;
-        background-color: #F6BA1E;
+        border: solid 0.4rem #1597B0;
+        background-color: #1597B0;
         margin-left: 5px;
         margin-right: 5px;
         transition: transform 3s; }

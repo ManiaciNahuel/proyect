@@ -1,12 +1,13 @@
 @import "../bootstrap_sass/scss/bootstrap.scss";
 // Colores //
-$naranja: #F0572F;
-$amarillo: #F6BA1E;
+$primario: #FF556D;
+$secundario : #1597B0;
+$fondo: #FEFFFE;
 
 /* General */
 
 body {
-    background-color: #F3F3F3;
+    background-color: $fondo;
     section {
         ul {
             li {
@@ -48,9 +49,9 @@ header {
     position: fixed;
     width: 100%;
     height: 180px;
-    background-color: #F3F3F3;
+    background-color: $fondo;
     z-index: 10;
-    border-bottom: solid 3px $naranja;
+    border-bottom: solid 3px $primario;
     border-radius: 3px;
     grid-area: header;
     h1 {
@@ -59,7 +60,7 @@ header {
         margin-top: 50px;
         margin-left: 25px;
         margin-bottom: 1px;
-        color: $naranja;
+        color: $primario;
     }
 }
 
@@ -81,8 +82,8 @@ nav {
                 text-decoration: none;
                 border-radius: 10px;
                 padding: 2px;
-                border: solid 0.4rem $amarillo;
-                background-color: $amarillo;
+                border: solid 0.4rem $secundario;
+                background-color: $secundario;
                 margin-left: 5px;
                 margin-right: 5px;
                 transition: transform 3s;
@@ -120,9 +121,9 @@ nav {
     li {
         a {
             &:hover {
-                background-color: $naranja;
-                color: #F3F3F3;
-                border: solid $naranja 0.4rem;
+                background-color: $primario;
+                color: $fondo;
+                border: solid $primario 0.4rem;
                 transform: translate(120px, 50%);
             }
         }
@@ -130,7 +131,7 @@ nav {
 }
 
 .naranja {
-    color: $naranja;
+    color: $primario;
 }
 
 .letraGrande {
@@ -146,7 +147,7 @@ table {
 
 tr {
     td {
-        border: 2px solid $naranja;
+        border: 2px solid $primario;
         padding: 20px;
     }
 }
@@ -178,7 +179,7 @@ tr {
 .serviceContainer {
     a {
         div {
-            border: solid 3px $naranja;
+            border: solid 3px $primario;
             border-radius: 10px;
             margin: 6px;
             height: 100%;
@@ -203,8 +204,8 @@ section {
             }
             div {
                 &:hover {
-                    background-color: $amarillo;
-                    border: solid 3px $amarillo;
+                    background-color: $secundario;
+                    border: solid 3px $secundario;
                 }
                 img {
                     width: 100%;
@@ -261,7 +262,7 @@ section {
 .animacion {
     transition: background-color 3s;
     &:hover {
-        background-color: $naranja;
+        background-color: $primario;
         transform: scale(1.2, 1.2);
     }
 }
@@ -276,7 +277,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 15px 35px 15px 15px;
-    border: 2px solid $naranja;
+    border: 2px solid $primario;
     border-radius: 8px;
     grid-area: pie;
     div {
@@ -345,7 +346,7 @@ $color in $redes {
     line-height: 5.5;
     padding: 35px 5px;
     text-align: center;
-    border: 2px solid $naranja;
+    border: 2px solid $primario;
     border-radius: 8px;
     grid-area: redes;
     ul {
@@ -386,7 +387,7 @@ $color in $redes {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 2px solid $naranja;
+    border: 2px solid $primario;
     border-radius: 8px;
     grid-area: form;
 }
@@ -437,8 +438,8 @@ $color in $redes {
         position: relative;
         width: 100%;
         height: 360px;
-        background-color: #F3F3F3;
-        border-bottom: solid 3px $naranja;
+        background-color: $fondo;
+        border-bottom: solid 3px $primario;
         border-radius: 3px;
         grid-area: header;
         h1 {
@@ -446,7 +447,7 @@ $color in $redes {
             margin-top: 50px;
             margin-left: 25px;
             margin-bottom: 1px;
-            color: $naranja;
+            color: $primario;
         }
     }
     nav {
@@ -465,8 +466,8 @@ $color in $redes {
                     border-radius: 10px;
                     padding: 0px 86px;
                     width: 100%;
-                    border: solid 0.4rem $amarillo;
-                    background-color: $amarillo;
+                    border: solid 0.4rem $secundario;
+                    background-color: $secundario;
                     margin-left: 5px;
                     margin-right: 5px;
                     transition: transform 3s;
