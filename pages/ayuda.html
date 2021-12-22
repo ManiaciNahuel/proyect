@@ -23,10 +23,13 @@
 </head>
 
 <body class="containerAyuda">
+    <!-- Whatsapp -->
+    <a href="https://web.whatsapp.com/send?phone=+5493517045448&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img class="whatsapp" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
+
     <!-- Encabezado fijo-->
     <header id="arriba">
-        <a href="../index.html"><img class="logo" src="../media/new_logo.png" alt="Logo corlog"></a>
-        <h1>CORLOG ARGENTINA</h1>
+        <a href="../index.html"><img class="logo" src="../media/logo.png" alt="Logo corlog"></a>
+        <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
         <nav>
             <ul class="flexMenu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -60,24 +63,29 @@
         </ul>
     </div>
     <!-- Form ubicado a la derecha -->
-    <form action="" class="form form_ext">
+    <form action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post" class="form form_ext">
+        <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
         <div class="form__info">
             <h2 class="letraGrande">¿Necesitas más información?</h2>
-            <div>
-                <input type="radio" name="info" value="si "> -SI
-                <input type="radio" name="info" value="no "> -NO
+            <div required>
+                <input type="radio" name="Pide más info" value="si "> -SI
+                <input type="radio" name="Pide más info" value="no "> -NO
             </div>
         </div>
         <div class="form__newsLetters">
             <h2 class="inline letraGrande">Si queres recibir mails con novedades y noticias sobre la empresa ingresa tu correo:</h2>
             <br>
-            <br><input type="email" name="correo" placeholder="tumail@mail.com">
+            <br><input type="email" name="Correo&nbsp;electrónico" placeholder="tumail@mail.com">
         </div>
         <div class="form__crecer">
             <h2 class="letraGrande">Ayudanos a crecer...¿Cómo nos conociste?</h2>
 
             <div name="vinculo" class="input-group mb-3">
-                <select class="form-select" id="inputGroupSelect01">
+                <select name="Opciones" class="form-select" id="inputGroupSelect01">
                 <option selected>Choose...</option>
                 <option class="opcion-1" value="1">Vía Instagram</option>
                 <option class="opcion-2" value="2">Vía Facebook</option>
@@ -85,11 +93,12 @@
                 <option value="opcion-4" value="4">Otro</option>
             </select>
             </div>
-            <br>
-            <input type="submit" value="Enviar formulario" />
-            <input type="reset" value="Limpiar formulario" />
-        </div>
 
+        </div>
+        <div class="boton">
+            <input class="boton-hijo hoverBoton" type="submit" value="Enviar formulario" />
+            <input class="boton-hijo hoverBoton" type="reset" value="Limpiar formulario" />
+        </div>
     </form>
     <br>
 
@@ -104,24 +113,16 @@
         </div>
 
         <div>
-            <h4>Links de información</h4>
-            <ul>
-                <li>Acerca de Corlog</li>
-                <li>Clientes</li>
-                <li>Términos y condiciones</li>
-                <li>Preguntas frecuentes</li>
-                <li>Etc</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Links de información 2</h4>
-            <ul>
-                <li>Horarios</li>
-                <li>Sucursales</li>
-                <li>Teléfono</li>
-                <li>Redes</li>
-                <li>Etc</li>
-            </ul>
+            <a href="nosotros.html">
+                <h4>Acerca de Corlog</h4>
+                <ul>
+
+                    <li>¿Quiénes somos?</li>
+                    <li>Servicios</li>
+                    <li>Misión</li>
+                    <li>Sucursales</li>
+                </ul>
+            </a>
         </div>
     </footer>
 </body>

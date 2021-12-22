@@ -18,13 +18,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon.ico">
     <!-- Descripción -->
-    <meta name="description" content="Brindamos un amplio servicio de transporte de encomiendas a clientes particulares y a empresas/organizaciones.">
+    <meta name="description" content="Brindamos un servicio de transporte de encomiendas a clientes particulares y a empresas/organizaciones.">
 </head>
 
 <body>
-    <header id="arriba">
-        <a href="index.html"><img class="logo" src="media/new_logo.png" alt="Logo corlog"></a>
-        <h1>CORLOG ARGENTINA</h1>
+    <header id="arriba" class="header-index">
+        <!-- Top Left Box -->
+        <img src="../media/boxx.png" alt="" class="cajas">
+        <!-- Logo -->
+        <a href="index.html"><img class="logo" src="media/logo.png" alt="Logo corlog"></a>
+        <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
         <nav>
             <!-- Menú con enlaces -->
             <ul class="flexMenu">
@@ -41,43 +44,43 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=+5493517045448&text=Hola%20Corlog%20Quiero%20hacer%20una%20consulta..." target="_blank"><img class="whatsapp" src="media/WhatsApp.png" alt="logoWhatsapp"></a>
 
     <main class="row"><br>
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="serviceContainer textAlignCenter ">
+            <div class="serviceContainer textAlignCenter">
                 <a href="pages/seguimiento.html">
                     <div class="col-md-4">
+                        <img src="media/segui.jpg" alt="seguimiento">
                         <h2 class="my-3">SEGUIMIENTO</h2>
-                        <p class="text-muted">Realizá el seguimiento de tu encomienda.</p>
-                        <br>
-                        <img src="media/seguimiento.jpg" alt="seguimiento">
+                        <p>Realizá el seguimiento de tu encomienda.</p>
                     </div>
                 </a>
 
                 <a href="pages/cotizacion.html">
                     <div class="col-md-4 ">
+                        <img src="media/presupuestos.jpg" alt="cotizacion ">
                         <h2 class="my-3 ">COTIZACIÓN</h2>
-                        <p class="text-muted ">Realizá la cotización de tu envío.</p>
+                        <p>Realizá la cotización de tu envío.</p>
                         <br>
-                        <img src="media/cotizacion.jpg " alt="cotizacion ">
                     </div>
                 </a>
 
                 <a href="pages/destinos.html">
                     <div class="col-md-4">
+                        <img src="media/puntos.jpg" alt="destinos">
                         <h2 class="my-3">DESTINOS</h2>
-                        <p class="text-muted">Conocé los puntos del país a los que llegamos.</p>
+                        <p>Conocé los puntos del país a los que llegamos.</p>
                         <br>
-                        <img src="media/destinos.jpg" alt="destinos">
                     </div>
                 </a>
 
             </div>
         </section>
         <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-ride="carousel">
+        <div id="demo" class="carousel textAlignCenter slide" data-ride="carousel">
 
             <!-- Indicators -->
             <ul class="carousel-indicators">
@@ -107,8 +110,9 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+
         <br>
-        <section class="letraGrande textAlignCenter">
+        <section class="letraGrande textAlignCenter empresas">
             <br>
             <h2 class="animacion">° EMPRESAS QUE CONFIAN EN NOSOTROS °</h2>
             <img src="media/empresas.png" alt="Empresas asociadas">
@@ -129,24 +133,16 @@
         </div>
 
         <div>
-            <h4>Links de información</h4>
-            <ul>
-                <li>Acerca de Corlog</li>
-                <li>Clientes</li>
-                <li>Términos y condiciones</li>
-                <li>Preguntas frecuentes</li>
-                <li>Etc</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Links de información 2</h4>
-            <ul>
-                <li>Horarios</li>
-                <li>Sucursales</li>
-                <li>Teléfono</li>
-                <li>Redes</li>
-                <li>Etc</li>
-            </ul>
+            <a href="pages/nosotros.html">
+                <h4>Acerca de Corlog</h4>
+                <ul>
+
+                    <li>¿Quiénes somos?</li>
+                    <li>Servicios</li>
+                    <li>Misión</li>
+                    <li>Sucursales</li>
+                </ul>
+            </a>
         </div>
     </footer>
 
